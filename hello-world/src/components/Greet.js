@@ -4,16 +4,21 @@ import React from 'react'
 //   return <h1>Hello CJ</h1>
 // }
 
-export const Greet = (props) =>{ 
-  console.log(props)
+// const Greet = (props) =>{ 
+//   return(
+//     <div>
+//       <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+//       {props.children}
+//     </div>
+//   )  
+// }
+const Greet = ({name, heroName, children}) =>{ 
   return(
     <div>
-      <h1>Hello {props.name} a.k.a {props.heroName}</h1>
-      {props.children}
-    </div>
-    
+      <h1>Hello {name} greet a.k.a {heroName}</h1>
+      {children}
+    </div> 
   )
-  
 }
 
-//export default Greet;
+export default Greet
