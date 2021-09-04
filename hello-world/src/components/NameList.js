@@ -2,7 +2,7 @@ import React from 'react'
 import Person from './Person'
 
 function NameList() {
-    const names = ['John','CJ','Cliff']
+    //const names = ['John','CJ','Cliff']
     const persons = [
       {
         id: 1,
